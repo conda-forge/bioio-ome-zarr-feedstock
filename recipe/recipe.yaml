@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: bioio-ome-zarr
-  version: 2.3.0
+  version: "3.0.0"
   python_min: 3.11
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/bioio_ome_zarr-${{ version }}.tar.gz
-  sha256: ee048bcdfa4718d3d048d8ee1089e97e0feeb6a0773c09571104d7085c92c61c
+  sha256: ec335314adc4036b6b8415c773a3a74022ec06b5e571c659295c94e6b5e9cdca
 
 build:
   number: 0
@@ -33,7 +33,7 @@ requirements:
     - s3fs >=2023.9.0
     - scikit-image !=0.23.0
     - xarray >=0.16.1
-    - zarr >=3.1.0,<3.1.2
+    - zarr >=3.1.0
 
 tests:
   - python:
