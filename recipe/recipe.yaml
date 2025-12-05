@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: bioio-ome-zarr
-  version: "3.1.0"
+  version: "3.2.0"
   python_min: 3.11
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/bioio_ome_zarr-${{ version }}.tar.gz
-  sha256: 0b7957a51a3c98eb867742311129544844cc382650a4ce90bbb1386204d4bb7f
+  sha256: a2fd4a1add3f314505c4d1646b9a98e7093d76d8cc24095b7f217d019db88306
 
 build:
   number: 0
@@ -27,7 +27,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - bioio-base >=1.4.0
+    - bioio-base >=3.1.0
     - dask !=2025.11.0
     - fsspec >=2022.8.0
     - aiohttp >=3.12.15,<4.0.0
