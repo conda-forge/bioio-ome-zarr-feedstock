@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: bioio-ome-zarr
-  version: "3.2.1"
+  version: "3.2.2"
   python_min: 3.11
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/bioio_ome_zarr-${{ version }}.tar.gz
-  sha256: ef143329de73b88229db03ad3ceb84399622c5fabf2b911b34c64f8a8a4363fd
+  sha256: 29568398ca1b3fdd2079e9f7ed18c3171e57996a4baeca7e928cd6c07a5a26a6
 
 build:
   number: 0
