@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: bioio-ome-zarr
-  version: "3.6.0"
+  version: "3.7.0"
   python_min: "3.11"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/bioio_ome_zarr-${{ version }}.tar.gz
-  sha256: 1117c0363c9ac2db75da4d463084b5b3cd665e11ee7f5bc2ca5f5e69370a8502
+  sha256: 73f96560a3b583835c1be871d5976bc31aa106c8a0d6399410e73a0788fdd3de
 
 build:
   number: 0
@@ -41,7 +41,9 @@ tests:
       imports:
         - bioio_ome_zarr
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: A BioIO reader plugin for reading Zarr files in the OME format.
