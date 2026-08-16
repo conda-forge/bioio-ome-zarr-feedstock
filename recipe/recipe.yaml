@@ -41,7 +41,9 @@ tests:
       imports:
         - bioio_ome_zarr
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: A BioIO reader plugin for reading Zarr files in the OME format.
